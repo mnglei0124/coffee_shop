@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2;400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/332a215f17.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Caffe Bar</title>
+  </head>
+  <body>
+    <div class="nav flex dir-row start align-center gap-0">
+      <div class="nav-box block col-auto">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="contents flex dir-row">
+        <div class="content col-1">
+          <a href="/">Home</a>
+        </div>
+        <div class="content col-1">
+          <a href="./src/pages/menu/index.html">Menu</a>
+        </div>
+        <div class="content col-1">
+          <a href="./src/pages/story/index.html">Our Story</a>
+        </div>
+        <div class="content col-1">
+          <a href="./src/pages/contact/index.html">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar-start -->
+    <div class="side-bar flex dir-row">
+      <div class="side-bar-main side-close" onclick="sideBarCloser();">
+        <ul class="flex dir-col space-between">
+          <div><a href="/">Home</a></div>
+          <div><a href="./src/pages/menu/index.html">Menu</a></div>
+          <div><a href="./src/pages/story/index.html">Our Story</a></div>
+          <div><a href="./src/pages/contact/index.html">Contact us</a></div>
+        </ul>
+      </div>
+      <div class="side-bar-shadow" onclick="sideBarCloser();"></div>
+    </div>
+    <!-- sidebar-end -->
+    <div class="header">
+      <div
+        class="header-contents flex dir-col center align-center justify-center"
+      >
+        <div class="nav-box-s" onclick="sideBarOpener();">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <h1 class="title">Coffee</h1>
+        <a href="./src/pages/menu/index.html" class="header-button pulsate">
+          Our Products
+        </a>
+      </div>
+    </div>
+
+    <section>
+      <h2 style="text-align: center; margin: 2rem">Suggested products</h2>
+      <div class="gallery-container">
+        <div class="img-card">
+          <div class="img-text">
+            <h1>Americano</h1>
+          </div>
+          <img
+            src="./assets/images/americano.png"
+            alt="americano"
+            class="prod_img"
+          />
+        </div>
+        <div class="img-card">
+          <div class="img-text">
+            <h1>Mocha</h1>
+          </div>
+          <img src="./assets/images/mocha.png" alt="mocha" class="prod_img" />
+        </div>
+        <div class="img-card">
+          <div class="img-text">
+            <h1>Expresso</h1>
+          </div>
+          <img
+            src="./assets/images/expresso.png"
+            alt="expresso"
+            class="prod_img"
+          />
+        </div>
+        <div class="img-card">
+          <div class="img-text">
+            <h1>Iced Cappucino</h1>
+          </div>
+          <img
+            src="./assets/images/iced-cappucino.png"
+            alt="iced cappucino"
+            class="prod_img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="social-icons">
+      <h2>Social Links</h2>
+      <a href="https://en-gb.facebook.com/"
+        ><i class="fab fa-facebook facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/"
+        ><i class="fab fa-instagram instagram"></i
+      ></a>
+      <a href="https://twitter.com/"><i class="fab fa-twitter twitter"></i></a>
+      <a href="https://accounts.google.com/"
+        ><i class="fab fa-google-plus plus"></i
+      ></a>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
